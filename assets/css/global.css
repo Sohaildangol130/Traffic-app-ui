@@ -1,0 +1,11 @@
+:root {
+  --button: #3C64B1;
+  --gradient: linear-gradient(138.43deg, #000629 3.73%, #084C8B 97.23%);
+  --grad-1: linear-gradient(335.58deg, #0094FF -6.95%, #014D84 103.92%);
+  --background: #052F62;
+}
+
+h1 {
+  font-size: 100px;
+}
+/*# sourceMappingURL=global.css.map */

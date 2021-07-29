@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,KAAK,CAAA;EACD,QAAQ,CAAA,QAAC;EACT,UAAU,CAAA,0DAAC;EACX,QAAQ,CAAA,4DAAC;EACT,YAAY,CAAA,QAAC;CAChB;;AAED,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "../scss/global.scss",
+        "../scss/utilities/_global.scss",
+        "../scss/utilities/_colors.scss"
+    ],
+    "names": [],
+    "file": "global.css"
+}
