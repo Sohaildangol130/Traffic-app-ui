@@ -1,0 +1,17 @@
+.input__container{
+    border-bottom: 2px solid var(--background);
+    padding: 0 12px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 426px) {
+        width: 280px;
+    }
+    input{
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        outline: none;
+    }
+}
