@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+</head>
+<body>
+    <!-- <div class="modal__delete modal">
+        <div class="modal__box">
+            <object class="box__close" data="./assets/images/icons/close.svg" type=""></object>
+            <h2 class="box__title">Delete user</h2>
+            <form action="" class="box__form">
+                <p class="form__text">Are you sure you want to delete users?</p>
+                <div class="form__buttons">
+                    <button class="secondary-button"><p>Cancel</p></button>
+                    <button class="primary-button"><p>Delete</p></button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+    <div class="top-bar">
+        <div class="top-bar__gradient"></div>
+        <div class="top-bar__navigation">
+            <h2 class="navigation__title">TRAFFIC MANAGEMENT</h2>
+            <div class="navigation__icons">
+                <object data="/assets/images/icons/hamburger.svg" type=""></object>
+                <object data="/assets/images/icons/profile.svg" type=""></object>
+            </div>
+        </div>
+    </div>
+    <div class="settings">
+        <div class="settings__header">
+            <div style="display: flex; gap: 50px">
+                <h2 class="header__title">Users</h2>
+                <div class="header__input input__container">
+                    <input class="" type="text" placeholder="Search user">
+                    <object data="./assets/images/icons/search.svg" type=""></object>
+                </div>
+            </div>
+            <div style="display: flex; gap: 40px">
+                <div class="header__frequency">
+                    <p>Traffic check frequency</p>
+                    <div>
+                        <select name="" id="">
+                            <option value="">6 hours</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="header__button primary-button"><p>Add new traffic intensity +</p></button>
+            </div>
+            <div class="header__second-input input__container">
+                <input class="" type="text" placeholder="Search user">
+                <object data="./assets/images/icons/search.svg" type=""></object>
+            </div>
+        </div>
+        <div class="settings__contents">
+            <div class="contents__header">
+                <div class="header__total">
+                    <p>5/10</p>
+                </div>
+                <div class="header__traffic-intensity">
+                    <p>Traffic Intensity</p>
+                </div>
+                <div class="header__notifications">
+                    <p>Notifications</p>
+                </div>
+                <div class="header__frequency">
+                    <p>Frequency</p>
+                </div>
+                <div class="header__traffic-area">
+                    <p>Target/Affect Area</p>
+                </div>
+                <div class="header__search-traffic">
+                    <p>Search/Select Traffic Points</p>
+                </div>
+                <div class="header__users">
+                    <p>Users</p>
+                </div>
+                <div class="header__icons"></div>
+            </div>
+            <div class="contents__desktop">
+                <div class="desktop__table">
+                    <div class="table__data">
+                        <div class="data__check">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="data__traffic-intensity">
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <div class="data__notifications">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="data__frequency">
+                            <select name="" id="">
+                                <option value="">5 min</option>
+                            </select>
+                        </div>
+                        <div class="data__traffic-area">
+                            <select name="" id="">
+                                <option value="">Saved traffic locations</option>
+                            </select>
+                        </div>
+                        <div class="data__search-traffic">
+                            <select name="" id="">
+                                <option value="">Lorem Ipsum</option>
+                            </select>
+                        </div>
+                        <div class="data__users">
+                            <select name="" id="">
+                                <option value="">Lorem Ipsum</option>
+                            </select>
+                        </div>
+                        <div class="data__icons">
+                            <object data="/assets/images/icons/pen.svg" type=""></object>
+                            <object data="/assets/images/icons/trash.svg" type=""></object>
+                        </div>
+                    </div>
+                    <div class="table__data">
+                        <div class="data__check">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="data__traffic-intensity">
+                            <p>Lorem Ipsum</p>
+                        </div>
+                        <div class="data__notifications">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="data__frequency">
+                            <select name="" id="">
+                                <option value="">5 min</option>
+                            </select>
+                        </div>
+                        <div class="data__traffic-area">
+                            <select name="" id="">
+                                <option value="">Saved traffic locations</option>
+                            </select>
+                        </div>
+                        <div class="data__search-traffic">
+                            <select name="" id="">
+                                <option value="">Lorem Ipsum</option>
+                            </select>
+                        </div>
+                        <div class="data__users">
+                            <select name="" id="">
+                                <option value="">Lorem Ipsum</option>
+                            </select>
+                        </div>
+                        <div class="data__icons">
+                            <object data="/assets/images/icons/pen.svg" type=""></object>
+                            <object data="/assets/images/icons/trash.svg" type=""></object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents__mobile">
+                <div class="mobile__table">
+                    <div class="table__data">
+                        <div class="data__check">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="data__details" style="display: flex; flex-direction:column; gap: 15px">
+                            <div class="details__traffic-intensity">
+                                <p>Traffic Intensity</p>
+                                <p>Lorem Ipsum</p>
+                            </div>
+                            <div class="details__notifications">
+                                <p>Notifications</p>
+                                <div>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="details__frequency">
+                                <p>Frequency</p>
+                                <select name="" id="">
+                                    <option value="">5 min</option>
+                                </select>
+                            </div>
+                            <div class="details__traffic-area">
+                                <p>Traffic Affect/Area</p>
+                                <select name="" id="">
+                                    <option value="">Saved traffic locations</option>
+                                </select>
+                            </div>
+                            <div class="details__search-traffic">
+                                <p>Search/Select Traffic Points</p>
+                                <select name="" id="">
+                                    <option value="">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                            <div class="details__users">
+                                <p>Users</p>
+                                <select name="" id="">
+                                    <option value="">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="data__icons">
+                            <object data="/assets/images/icons/pen.svg" type=""></object>
+                            <object data="/assets/images/icons/trash.svg" type=""></object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings__delete">
+            <button class="primary-button"><p>Delete Selected</p></button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; All rights reserved.</p>
+    </div>
+</body>
+</html>
