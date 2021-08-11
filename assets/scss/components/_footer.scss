@@ -10,4 +10,9 @@
     p{
         font-size: 18px;
     }
+    &--hidden{
+        @media (min-width: 500px) {
+            display: none;
+        }
+    }
 }
