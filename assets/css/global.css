@@ -134,7 +134,7 @@ select {
 
 @media (max-width: 426px) {
   .top-bar__navigation .navigation__title {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
@@ -145,10 +145,16 @@ select {
   gap: 30px;
 }
 
+.top-bar--auth-top {
+  margin-top: unset !important;
+}
+
 @media (max-width: 426px) {
   .top-bar--auth-top .top-bar__navigation {
     padding: 60px 0;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 47, 98, 0.8)), to(rgba(5, 47, 98, 0.8))), url("/assets/images/bg.jpg");
     background: linear-gradient(to bottom, rgba(5, 47, 98, 0.8), rgba(5, 47, 98, 0.8)), url("/assets/images/bg.jpg");
   }
@@ -243,7 +249,7 @@ select {
 
 .footer {
   padding: 20px;
-  height: 200px;
+  height: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 47, 98, 0.8)), to(rgba(5, 47, 98, 0.8))), url("/assets/images/bg.jpg");
   background: linear-gradient(to bottom, rgba(5, 47, 98, 0.8), rgba(5, 47, 98, 0.8)), url("/assets/images/bg.jpg");
   background-position: center;
@@ -450,6 +456,12 @@ input:checked + .slider:before {
   }
 }
 
+@media (min-width: 426px) {
+  .forgot-password .form__buttons {
+    text-align: right;
+  }
+}
+
 .reset-password {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 47, 98, 0.8)), to(rgba(5, 47, 98, 0.8))), url("/assets/images/bg.jpg");
   background: linear-gradient(to bottom, rgba(5, 47, 98, 0.8), rgba(5, 47, 98, 0.8)), url("/assets/images/bg.jpg");
@@ -510,6 +522,12 @@ input:checked + .slider:before {
   .reset-password__container {
     -webkit-box-shadow: unset;
             box-shadow: unset;
+  }
+}
+
+@media (min-width: 426px) {
+  .reset-password .form__buttons {
+    text-align: right;
   }
 }
 
