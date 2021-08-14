@@ -23,12 +23,71 @@
                     font-size: 20px !important;
                 }
             }
-            &__icons{
+            &__items{
                 display: flex;
                 gap: 30px;
-                // * {
-                //     margin-left: 30px;
-                // }
+                .items__single-item{
+                    position: relative;
+                    margin-top: 12px;
+                    .single-item__dropdown{
+                        background-color: #fff;
+                        position: absolute;
+                        top: 40px;
+                        right: 0;
+                        width: 200px;
+                        display: none;
+                        box-shadow: 3px 4px 21px 0px hsla(0, 0%, 0%, 0.3);
+                        .dropdown__item{
+                            padding: 15px 20px;
+                            position: relative;
+                            .item__icon{
+                                *{
+                                    fill: black;
+                                }
+                            }
+                            &:hover{
+                                background-color: hsla(210, 41%, 92%, 1);
+                                cursor: pointer;
+                                &::before{
+                                    content: '';
+                                    background-color: var(--background);
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    height: 100%;
+                                    width: 5px;
+                                }
+                                .item__icon{
+                                    *{
+                                        fill: var(--background);
+                                    }
+                                }
+                            }
+                            &--border{
+                                border-top: 2px solid hsla(210, 41%, 92%, 1);
+                            }
+                        }
+                        &::before{
+                            content: '';
+                            width: 0; 
+                            height: 0; 
+                            border-left: 14px solid transparent;
+                            border-right: 14px solid transparent;                            
+                            border-bottom: 14px solid #fff;
+                            position: absolute;
+                            right: 0;
+                            top: -15px;
+                        }
+                    }
+                    &:hover{
+                        .single-item__dropdown{
+                            display: block;
+                        }
+                    }
+                    &:first-child{
+                        transform: translateY(2px);
+                    }
+                }
             }
         }
     }
