@@ -1,0 +1,34 @@
+.pagination{
+    display: grid;
+    place-items: center;
+    &__container{
+        padding: 8px 15px;
+        box-shadow: 3px 4px 21px 0px hsla(0, 0%, 0%, 0.12);
+        & > *{
+            padding: 8px 12px;
+            display: grid;
+            place-items: center;
+            border-radius: 4px;
+            color: #a1a1a1;
+            cursor: pointer;
+            transition: .3s all;
+            &:hover{
+                background-color: hsla(210, 41%, 92%, 1);
+                color: black;
+            }
+        }
+        .container{
+            &__right{
+                *{
+                    transform: rotate(180deg);
+                }
+            }
+            &__index{
+                &--active{
+                    background-color: var(--background);
+                    color: white;
+                }
+            }
+        }
+    }
+}

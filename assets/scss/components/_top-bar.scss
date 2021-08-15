@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 10;
     width: 100%;
-    margin-top: -73px;
+    transform: translateY(-73px);
     border-bottom: 1px solid var(--background);
     &__gradient{
         height: 5px;
@@ -29,17 +29,22 @@
                 .items__single-item{
                     position: relative;
                     margin-top: 12px;
+                    transition: .3s all;
+                    cursor: pointer;
                     .single-item__dropdown{
                         background-color: #fff;
                         position: absolute;
-                        top: 40px;
+                        top: 35px;
                         right: 0;
                         width: 200px;
-                        display: none;
+                        opacity: 0;
                         box-shadow: 3px 4px 21px 0px hsla(0, 0%, 0%, 0.3);
+                        transition: .3s all;
+                        pointer-events: none;
                         .dropdown__item{
                             padding: 15px 20px;
                             position: relative;
+                            transition: .3s all;
                             .item__icon{
                                 *{
                                     fill: black;
@@ -81,7 +86,9 @@
                     }
                     &:hover{
                         .single-item__dropdown{
-                            display: block;
+                            opacity: 1;
+                            top: 40px;
+                            pointer-events: all;
                         }
                     }
                     &:first-child{

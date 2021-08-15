@@ -68,8 +68,12 @@
                 }
             }
             &__desktop{
+                min-height: 40vh;
+                display: grid;
+                place-items: center;
                 .desktop{
                     &__table{
+                        width: 100%;
                         .table__data{
                             display: flex;
                             align-items: center;
@@ -100,6 +104,19 @@
                             &:nth-child(even){
                                 background: hsla(210, 41%, 92%, 1);
                             }
+                        }
+                    }
+                    &__empty{
+                        margin-top: 30px;
+                        display: grid;
+                        place-items: center;
+                        gap: 20px;
+                        img{
+                            height: 300px;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: #a1a1a1;
                         }
                     }
                 }

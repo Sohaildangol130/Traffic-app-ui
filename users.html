@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 <body>
-    <div class="modal__new modal">
+    <div class="modal__new modal" style="display: none">
         <div class="modal__box">
             <object class="box__close" data="./assets/images/icons/close.svg" type=""></object>
             <h2 class="box__title">New user</h2>
@@ -145,7 +145,7 @@
                 <div class="header__icons"></div>
             </div>
             <div class="contents__desktop">
-                <div class="desktop__table">
+                <div class="desktop__table" style="display: none">
                     <div class="table__data">
                         <div class="data__check">
                             <input type="checkbox" name="" id="">
@@ -215,6 +215,10 @@
                             <object data="/assets/images/icons/trash.svg" type=""></object>
                         </div>
                     </div>
+                </div>
+                <div class="desktop__empty">
+                    <img src="https://ouch-cdn2.icons8.com/0RbT-yXM8MRCO68cQevYjMKFCyFl9gQX17oyeqDvEGo/rs:fit:912:912/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDY4/LzU4OWMzZTZkLWQz/OTAtNGQ0My04NTgx/LTY4NDkzMGZiNWRk/ZC5zdmc.png" alt="No user details.">
+                    <p>No user details to display!!</p>
                 </div>
             </div>
             <div class="contents__mobile">
@@ -282,6 +286,20 @@
         </div>
         <div class="users__delete">
             <button class="primary-button"><p>Delete Selected</p></button>
+        </div>
+        <div class="pagination">
+            <div class="pagination__container flex-row" style="gap: 8px">
+                <div class="container__left">
+                    <object data="./assets/images/icons/arrow.svg" type=""></object>
+                </div>
+                <div class="container__index container__index--active">1</div>
+                <div class="container__index">2</div>
+                <div class="container__more">...</div>
+                <div class="container__index">200</div>
+                <div class="container__right">
+                    <object data="./assets/images/icons/arrow.svg" type=""></object>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
