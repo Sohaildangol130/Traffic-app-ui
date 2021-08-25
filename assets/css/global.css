@@ -125,8 +125,8 @@ select {
   position: fixed;
   z-index: 10;
   width: 100%;
-  -webkit-transform: translateY(-73px);
-          transform: translateY(-73px);
+  -webkit-transform: translateY(-83px);
+          transform: translateY(-83px);
   border-bottom: 1px solid var(--background);
 }
 
@@ -1297,5 +1297,53 @@ input:checked + .slider:before {
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
+}
+
+.landing-page {
+  margin-top: 83px;
+}
+
+.landing-page > div {
+  padding: 20px;
+}
+
+.landing-page__map {
+  background-color: #ececec;
+  min-height: 65vh;
+}
+
+.landing-page__legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.landing-page__legend .legend__section {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (minmax(190px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+
+.landing-page__legend .legend__section .section__single-legend .single-legend__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.landing-page__legend .legend__section .section__single-legend .single-legend__details .details__color {
+  padding: 15px;
+  background-color: var(--color);
+  border-radius: 50%;
 }
 /*# sourceMappingURL=global.css.map */
