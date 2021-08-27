@@ -101,7 +101,7 @@ select {
 
 .primary-button {
   padding: 8px 22px;
-  background: var(--button);
+  background: #07437E;
   border: none;
   color: white;
   font-weight: 700;
@@ -1303,13 +1303,90 @@ input:checked + .slider:before {
   margin-top: 83px;
 }
 
-.landing-page > div {
-  padding: 20px;
-}
-
 .landing-page__map {
   background-color: #ececec;
-  min-height: 65vh;
+  min-height: 75vh;
+  position: relative;
+}
+
+.landing-page__map .map__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.landing-page__map .map__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.landing-page__map .map__btn--hide {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.landing-page__map .map__traffic-point {
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  -webkit-box-shadow: 4px 3px 11px 0px #0000001A;
+          box-shadow: 4px 3px 11px 0px #0000001A;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.landing-page__map .map__traffic-point--show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.landing-page__map .map__traffic-point h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--background);
+}
+
+.landing-page__map .map__traffic-point .traffic-point__close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--background);
+}
+
+.landing-page__map .map__traffic-point .traffic-point__form {
+  margin-top: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.landing-page__map .map__traffic-point .traffic-point__form .input__container {
+  width: 100% !important;
+}
+
+.landing-page__map .map__traffic-point .traffic-point__form .form__points {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.landing-page__map .map__traffic-point .traffic-point__form .form__btn {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
 }
 
 .landing-page__legend {
@@ -1321,6 +1398,7 @@ input:checked + .slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  padding: 20px;
 }
 
 .landing-page__legend .legend__section {

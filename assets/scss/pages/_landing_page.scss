@@ -1,16 +1,84 @@
 .landing-page{
     margin-top: 83px;
-    & > div{
-        padding: 20px;
-    }
     &__map{
         background-color: rgb(236, 236, 236);
-        min-height: 65vh;
+        min-height: 75vh;
+        position: relative;
+        .map{
+            &__container{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+            &__btn{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                transition: .3s all ease-in-out;
+                &--hide{
+                    transform: translateY(15px);
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+            &__traffic-point{
+                padding: 20px;
+                background-color: white;
+                position: absolute;
+                height: 100%;
+                width: 300px;
+                box-shadow: 4px 3px 11px 0px #0000001A;
+                transform: translateX(-15px);
+                opacity: 0;
+                pointer-events: none;
+                transition: .3s all ease-in-out;
+                &--show{
+                    transform: translateX(0);
+                    opacity: 1;
+                    pointer-events: all;
+                }
+                h2{
+                    margin-top: 20px;
+                    font-size: 24px;
+                    color: var(--background);
+                }
+                .traffic-point{
+                    &__close{
+                        float: right;
+                        font-size: 20px;
+                        cursor: pointer;
+                        color: var(--background);
+                    }
+                    &__form{
+                        margin-top: 20px;
+                        position: relative;
+                        height: 100%;
+                        .input__container{
+                            width: 100% !important;
+                        }
+                        .form{
+                            &__points{
+                                margin-top: 12px;
+                                margin-bottom: 12px;
+                            }
+                            &__btn{
+                                width: 100%;
+                                position: absolute;
+                                bottom: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &__legend{
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding: 20px;
         .legend__section{
             display: grid;
             gap: 30px;
