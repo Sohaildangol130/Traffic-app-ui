@@ -111,7 +111,7 @@ select {
 }
 
 .primary-button:hover {
-  background-color: #2f4e89;
+  background-color: #043363;
 }
 
 .secondary-button {
@@ -1445,5 +1445,263 @@ input:checked + .slider:before {
   padding: 15px;
   background-color: var(--color);
   border-radius: 50%;
+}
+
+.traffic-points {
+  margin-top: 73px;
+  padding: 20px 0;
+}
+
+.traffic-points__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.traffic-points__header .header__title {
+  font-size: 28px;
+  color: var(--background);
+}
+
+.traffic-points__header .header__input {
+  width: 300px;
+}
+
+.traffic-points__header .header__second-input {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 426px) {
+  .traffic-points__header .header__input {
+    display: none;
+  }
+  .traffic-points__header .header__second-input {
+    display: block;
+  }
+}
+
+.traffic-points__map {
+  height: 60vh;
+  background-color: #a1a1a1;
+}
+
+.traffic-points__contents {
+  margin-top: 20px;
+}
+
+.traffic-points__contents .contents__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+@media (min-width: 426px) {
+  .traffic-points__contents .contents__header {
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.traffic-points__contents .contents__header .header__total {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.traffic-points__contents .contents__header .header__name {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__header .header__email {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__header .header__phone {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__header .header__type {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__header .header__icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 426px) {
+  .traffic-points__contents .contents__header .header__name, .traffic-points__contents .contents__header .header__email, .traffic-points__contents .contents__header .header__phone, .traffic-points__contents .contents__header .header__type, .traffic-points__contents .contents__header .header__icons {
+    display: none;
+  }
+}
+
+.traffic-points__contents .contents__desktop {
+  min-height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table {
+  width: 100%;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__check {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__name {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__email {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__phone {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__type {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data .data__icons > *:first-child {
+  margin-right: 20px;
+}
+
+.traffic-points__contents .contents__desktop .desktop__table .table__data:nth-child(even) {
+  background: #e2ebf3;
+}
+
+.traffic-points__contents .contents__desktop .desktop__empty {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.traffic-points__contents .contents__desktop .desktop__empty img {
+  height: 300px;
+}
+
+.traffic-points__contents .contents__desktop .desktop__empty p {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+@media (max-width: 426px) {
+  .traffic-points__contents .contents__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) {
+  .traffic-points__contents .contents__mobile {
+    display: none;
+  }
+}
+
+.traffic-points__contents .contents__mobile .mobile__table {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.07);
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data .data__details * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data .data__details *:first-child {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data .data__details *:last-child {
+  -webkit-box-flex: 90%;
+      -ms-flex: 90%;
+          flex: 90%;
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data .data__icons > *:first-child {
+  margin-right: 10px;
+}
+
+.traffic-points__contents .contents__mobile .mobile__table .table__data:nth-child(even) {
+  background: #e2ebf3;
+}
+
+.traffic-points__delete {
+  margin: 20px;
 }
 /*# sourceMappingURL=global.css.map */
