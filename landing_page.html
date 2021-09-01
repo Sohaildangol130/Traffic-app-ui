@@ -172,8 +172,8 @@
             $(this).toggleClass('map__btn--hide')
             $('.map__traffic-point').toggleClass('map__traffic-point--show');
         })
-        $('.map__traffic-point').on('click', function(){
-            $(this).toggleClass('map__traffic-point--show')
+        $('.traffic-point__close').on('click', function(){
+            $(this).closest('.map__traffic-point').toggleClass('map__traffic-point--show')
             $('.map__btn').toggleClass('map__btn--hide');
         })
     </script>
