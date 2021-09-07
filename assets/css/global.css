@@ -468,6 +468,114 @@ input:checked + .slider:before {
   color: white;
 }
 
+.map {
+  background-color: #ececec;
+  min-height: 75vh;
+  position: relative;
+}
+
+.map__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.map__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.map__btn--hide {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.map__traffic-point {
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  -webkit-box-shadow: 4px 3px 11px 0px #0000001A;
+          box-shadow: 4px 3px 11px 0px #0000001A;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+@media (max-width: 428px) {
+  .map__traffic-point {
+    height: unset;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+.map__traffic-point--show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.map__traffic-point h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--background);
+}
+
+.map__traffic-point .traffic-point__close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--background);
+}
+
+.map__traffic-point .traffic-point__form {
+  margin-top: 20px;
+  position: relative;
+  height: 100%;
+}
+
+@media (max-width: 428px) {
+  .map__traffic-point .traffic-point__form {
+    text-align: center;
+  }
+}
+
+.map__traffic-point .traffic-point__form .input__container {
+  width: 100% !important;
+}
+
+.map__traffic-point .traffic-point__form .form__points {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.map__traffic-point .traffic-point__form .form__btn {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  margin-top: 20px;
+}
+
+@media (max-width: 428px) {
+  .map__traffic-point .traffic-point__form .form__btn {
+    position: unset;
+    width: unset;
+  }
+}
+
 .login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,114 +1409,6 @@ input:checked + .slider:before {
 
 .landing-page {
   margin-top: 83px;
-}
-
-.landing-page__map {
-  background-color: #ececec;
-  min-height: 75vh;
-  position: relative;
-}
-
-.landing-page__map .map__container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.landing-page__map .map__btn {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
-}
-
-.landing-page__map .map__btn--hide {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
-  opacity: 0;
-  pointer-events: none;
-}
-
-.landing-page__map .map__traffic-point {
-  padding: 20px;
-  background-color: white;
-  position: absolute;
-  height: 100%;
-  width: 300px;
-  -webkit-box-shadow: 4px 3px 11px 0px #0000001A;
-          box-shadow: 4px 3px 11px 0px #0000001A;
-  -webkit-transform: translateX(-15px);
-          transform: translateX(-15px);
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
-}
-
-@media (max-width: 428px) {
-  .landing-page__map .map__traffic-point {
-    height: unset;
-    width: 100%;
-    bottom: 0;
-  }
-}
-
-.landing-page__map .map__traffic-point--show {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-  pointer-events: all;
-}
-
-.landing-page__map .map__traffic-point h2 {
-  margin-top: 20px;
-  font-size: 24px;
-  color: var(--background);
-}
-
-.landing-page__map .map__traffic-point .traffic-point__close {
-  float: right;
-  font-size: 20px;
-  cursor: pointer;
-  color: var(--background);
-}
-
-.landing-page__map .map__traffic-point .traffic-point__form {
-  margin-top: 20px;
-  position: relative;
-  height: 100%;
-}
-
-@media (max-width: 428px) {
-  .landing-page__map .map__traffic-point .traffic-point__form {
-    text-align: center;
-  }
-}
-
-.landing-page__map .map__traffic-point .traffic-point__form .input__container {
-  width: 100% !important;
-}
-
-.landing-page__map .map__traffic-point .traffic-point__form .form__points {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.landing-page__map .map__traffic-point .traffic-point__form .form__btn {
-  width: 100%;
-  position: absolute;
-  bottom: 70px;
-  margin-top: 20px;
-}
-
-@media (max-width: 428px) {
-  .landing-page__map .map__traffic-point .traffic-point__form .form__btn {
-    position: unset;
-    width: unset;
-  }
 }
 
 .landing-page__legend {

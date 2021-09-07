@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traffic points</title>
     <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="modal__new modal" style="display: none">
@@ -142,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <button class="header__button primary-button"><p>Add new user +</p></button>
+            <button class="header__button primary-button map__btn--toggle"><p>Add traffic point +</p></button>
             <div class="header__second-input input__container">
                 <div class="container__box">
                     <input class="" type="text" placeholder="E-mail">
@@ -153,7 +156,58 @@
                 </div>
             </div>
         </div>
-        <div class="traffic-points__map"></div>
+        <div class="map">
+            <div class="map__container"></div>
+            <div class="map__traffic-point">
+                <i class="fas fa-times traffic-point__close"></i>
+                <h2>New traffic point</h2>
+                <form class="traffic-point__form" action="">
+                    <div class="form__radio flex-row items-center" style="gap: 16px">
+                        <div class="flex-row items-center" style="gap: 4px">
+                            <input type="radio" name="" id="">
+                            <label for="">Route</label>
+                        </div>
+                        <div class="flex-row items-center" style="gap: 4px">
+                            <input type="radio" name="" id="">
+                            <label for="">Route</label>
+                        </div>
+                    </div>
+                    <div class="form__points">
+                        <div class="flex-row items-center">
+                            <svg height="15" width="15">
+                                <circle cx="7.5" cy="7.5" r="7" fill="#052F62"/>
+                              </svg>
+                            <div class="input__container">
+                                <div class="container__box">
+                                    <input class="" type="text" placeholder="From">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row items-center">
+                            <svg height="15" width="15">
+                                <circle cx="7.5" cy="7.5" r="7" fill="#3C64B1"/>
+                              </svg>
+                            <div class="input__container">
+                                <div class="container__box">
+                                    <input class="" type="text" placeholder="To">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__location">                        
+                        <div class="flex-row items-center">
+                            <i class="fas fa-map-marker-alt" style="color: #052F62"></i>
+                            <div class="input__container">
+                                <div class="container__box">
+                                    <input class="" type="text" placeholder="Name point">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form__btn primary-button"><p>Add point</p></button>
+                </form>
+            </div>
+        </div>
         <div class="traffic-points__contents">
             <div class="contents__header">
                 <div class="header__total">
@@ -334,5 +388,13 @@
     <div class="footer">
         <p>&copy; All rights reserved.</p>
     </div>
+    <script>
+        $('.map__btn--toggle').on('click', function(){
+            $('.map__traffic-point').toggleClass('map__traffic-point--show');
+        })
+        $('.traffic-point__close').on('click', function(){
+            $(this).closest('.map__traffic-point').toggleClass('map__traffic-point--show')
+        })
+    </script>
 </body>
 </html>
